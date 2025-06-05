@@ -1,0 +1,33 @@
+
+ol {
+    list-style-type: decimal;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* merge adjacent cell borders into a single border */
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+td {
+    background-color: white;
+}
+
+.red-background td {
+    background-color: red;
+}
+
+#loginButtonContainer {
+  width: 230px;
+}

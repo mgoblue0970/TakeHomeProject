@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Submission Form</title>
+    <link rel="stylesheet" href="takeHomeStylesheet.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="client.js"></script>
+    <script src="server.js"></script>
+</head>
+<body>
+    <!-- At least one h1 doesn't have to be done by CSS because search engines still look for
+         this tag.  Don't want anyone reading this to think I was stuck in the 2000s -->
+    <h1>Submit Your Text</h1>
+
+    <ol>
+        <!-- <li><button id="loginButton" onclick="googleLogin()">Please login with Google</button></li> -->
+        <li>
+            <div id="loginButtonContainer"> <!-- the loginbutton is huge without constraining it.  So using a container with a specified width to tame it a little. -->
+                <div id="loginButton"></div>
+            </div>
+        </li>
+        <p>
+        <label for="textbox"></label>
+        <!-- textbox and button with an event to kick off writing to table process -->
+        <li><input type="text" id="textbox" placeholder="Enter text here">
+        <button id="submitButton" onclick="submitTextbox()">Submit</button></li>
+    </ol>
+
+    <!-- Table to write the input text -->
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Text</th>
+                <th>Date/Time</th>
+            </tr>
+        </thead>
+        <tbody></tbody> <!-- this is here just for browser compatibility -->
+    </table>
+</body>
+</html>
